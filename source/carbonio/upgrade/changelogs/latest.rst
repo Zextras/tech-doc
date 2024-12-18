@@ -407,7 +407,7 @@ Bugfix List
    Enhanced file versioning to prevent accidental deletion of the current file version when purging all versions, ensuring file integrity.
 
 
-**FILESS-879: Fix account deletion powerstore issue**
+**FILES-879: Fix account deletion powerstore issue**
    When an admin deletes an account, the system now correctly removes the account's data from Powerstore, preventing failed calls due to the account no longer being available.
 
 *****
