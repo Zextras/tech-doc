@@ -50,7 +50,7 @@ version = release
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [ 'sphinx_design', 'sphinx_copybutton',
-               'sphinx.ext.graphviz', 'sphinxcontrib.email' ]
+               'sphinx.ext.graphviz', 'sphinxcontrib.email', 'sphinx_multiversion' ]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -76,6 +76,29 @@ numfig = True
 email_automode = True
 
 graphviz_output_format = 'png'
+
+## sphinx-multiversion
+
+# Whitelist pattern for tags (set to None to ignore all tags)
+#smv_tag_whitelist = r'^ZTD-81.*$
+smv_tag_whitelist = r'None'
+
+# Whitelist pattern for branches (set to None to ignore all branches)
+smv_branch_whitelist = r'devel|ZTD-98.*$|ZTD-99.*$'
+#smv_branch_whitelist = r'test'
+# Whitelist pattern for remotes (set to None to use local branches only)
+smv_remote_whitelist = r'origin'
+
+# Pattern for released versions
+#smv_released_pattern = r'^refs/heads/.*$'
+#smv_released_pattern = r'^refs/heads/ZTD-99.*$'
+
+# Format for versioned output directories inside the build directory
+#smv_outputdir_format = '{ref.name}'
+smv_outputdir_format = '{config.version}/{ref.name}'
+
+# Determines whether remote or local git branches/tags are preferred if their output dirs conflict
+smv_prefer_remote_refs = False
 
 # -- Options for HTML output -------------------------------------------------
 
