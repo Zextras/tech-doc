@@ -9,3 +9,4 @@ sphinx-book-theme
 sphinx_copybutton
 sphinxcontrib-email
 docutils
+sphinx_multiversion
