@@ -137,7 +137,7 @@ packages that are not needed anymore.
          carbonio-files-db carbonio-mailbox-db \
          carbonio-message-dispatcher-db \
          carbonio-notification-push-db carbonio-ws-collaboration-db \
-         carbonio-prometheus-pgpool-exporter
+         carbonio-prometheus-pgpool-exporter carbonio-tasks-db
 
    .. tab-item:: RHEL
       :sync: rhel
@@ -148,7 +148,7 @@ packages that are not needed anymore.
          carbonio-files-db carbonio-mailbox-db \
          carbonio-message-dispatcher-db \
          carbonio-notification-push-db carbonio-ws-collaboration-db \
-         carbonio-prometheus-pgpool-exporter
+         carbonio-prometheus-pgpool-exporter carbonio-tasks-db
 
 .. _pg_restart:
 
